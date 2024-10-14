@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_code_to_placeholder"
+        android:textAppearance="@style/TextAppearance.JobFinder.Title2"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_x16"
+        android:text="@string/pin_code_rationale"
+        android:textAppearance="@style/TextAppearance.JobFinder.Title3"
+        android:textColor="@color/text_color" />
+
+    <tech.kekulta.uikit.PinInputField
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_x16" />
+
+    <tech.kekulta.uikit.ButtonBig1
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_x16"
+        android:enabled="false"
+        android:text="@string/confirm_button_text" />
+</merge>

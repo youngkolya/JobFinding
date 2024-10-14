@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_x8">
+
+            <TextView
+                android:id="@+id/i1"
+                android:layout_width="@dimen/size_x48"
+                android:layout_height="@dimen/size_x48"
+                android:background="@drawable/background_round_low"
+                android:backgroundTint="@color/grey2"
+                android:gravity="center"
+                android:maxLength="2"
+                android:textAppearance="@style/TextAppearance.JobFinder.Title1"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/grey3" />
+
+            <ImageView
+                android:id="@+id/s1"
+                android:layout_width="@dimen/size_x16"
+                android:layout_height="@dimen/size_x16"
+                android:layout_gravity="center"
+                android:src="@drawable/star" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_x8">
+
+            <TextView
+                android:id="@+id/i2"
+                android:layout_width="@dimen/size_x48"
+                android:layout_height="@dimen/size_x48"
+                android:background="@drawable/background_round_low"
+                android:backgroundTint="@color/grey2"
+                android:gravity="center"
+                android:maxLength="2"
+                android:textAppearance="@style/TextAppearance.JobFinder.Title1"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/grey3" />
+
+            <ImageView
+                android:id="@+id/s2"
+                android:layout_width="@dimen/size_x16"
+                android:layout_height="@dimen/size_x16"
+                android:layout_gravity="center"
+                android:src="@drawable/star" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_x8">
+
+            <TextView
+                android:id="@+id/i3"
+                android:layout_width="@dimen/size_x48"
+                android:layout_height="@dimen/size_x48"
+                android:background="@drawable/background_round_low"
+                android:backgroundTint="@color/grey2"
+                android:gravity="center"
+                android:maxLength="2"
+                android:textAppearance="@style/TextAppearance.JobFinder.Title1"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/grey3" />
+
+            <ImageView
+                android:id="@+id/s3"
+                android:layout_width="@dimen/size_x16"
+                android:layout_height="@dimen/size_x16"
+                android:layout_gravity="center"
+                android:src="@drawable/star" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/i4"
+                android:layout_width="@dimen/size_x48"
+                android:layout_height="@dimen/size_x48"
+                android:background="@drawable/background_round_low"
+                android:backgroundTint="@color/grey2"
+                android:gravity="center"
+                android:maxLength="2"
+                android:textAppearance="@style/TextAppearance.JobFinder.Title1"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/grey3" />
+
+            <ImageView
+                android:id="@+id/s4"
+                android:layout_width="@dimen/size_x16"
+                android:layout_height="@dimen/size_x16"
+                android:layout_gravity="center"
+                android:src="@drawable/star" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autofillHints="otp"
+        android:background="@color/transparent"
+        android:cursorVisible="false"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:textColor="@color/transparent"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/container"
+        app:layout_constraintEnd_toEndOf="@+id/container"
+        app:layout_constraintStart_toStartOf="@+id/container"
+        app:layout_constraintTop_toTopOf="@+id/container" />
+</merge>
